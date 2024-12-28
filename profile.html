@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/images/ico/favicon.png">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/profile.css">
+    <title>Профиль</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="header__nav">
+              <div class="header__logo">
+                <a href="index.html"><img src="assets/images/logo/logo.svg" alt="Logo" /></a>
+              </div>
+              <div class="header__navigation">
+                  <ul>
+                    <li><a href="profile.html" class="nav-links"><img src="assets/images/ico/profile-main.svg" alt="profile">Профиль</a></li>
+                    <li><a href="chats.html" class="nav-links"><img src="assets/images/ico/chat-main.svg" alt="chat">Чаты</a></li>
+                    <li><a href="search.html" class="nav-links"><img src="assets/images/ico/search-main.svg" alt="search">Найти</a></li>
+                  </ul>
+              </div>
+
+              <div class="burger">
+                <span></span>
+              </div>
+              
+            </nav>
+          </div>
+    </header>
+
+    <main>
+        <section class="profile">
+            <div class="container">
+                <div class="profile__inner">
+                    <h1>Настройка профиля Sweat Pear</h1>
+
+                    <!-- Avatar -->
+                    <img src="#" class="profile-img" id="profilePhoto">
+
+                    <!-- Форма профиля -->
+                    <form action="#" method="#" id="profileForm">
+                        <label for="photo">Загрузить фото:</label>
+                        <input type="file" id="photo" accept="image/*">
+
+                        <label for="fullName">Фамилия и имя:</label>
+                        <input type="text" id="fullName" placeholder="Введите фамилию и имя">
+
+                        <label for="city">Город:</label>
+                        <input type="text" id="city" placeholder="Введите город">
+
+                        <label for="sex">Пол:</label>
+                        <select name="name" id="sex">
+                            <option value="nothing">-</option>
+                            <option value="male">мужской</option>
+                            <option value="female">женский</option>
+                            <option value="another">другое</option>
+                        </select>
+
+                        <label for="age">Возраст:</label>
+                        <input type="number" id="age" min="1" max="120" placeholder="Введите возраст">
+
+                        <button type="button" id="saveProfile">Сохранить</button>
+                    </form>
+
+                    <div class="profile-data">
+                        <h3>Данные профиля</h3>
+                        <p><strong>Имя:</strong><br><span id="resultName">-</span></p>
+                        <p><strong>Город:</strong><br><span id="resultCity">-</span></p>
+                        <p><strong>Возраст:</strong><br><span id="resultAge">-</span></p>
+                        <p><strong>Пол:</strong><br><span id="resultSex">-</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer"></footer>
+
+
+    <script src="assets/js/profile.js"></script>
+</body>
+</html>

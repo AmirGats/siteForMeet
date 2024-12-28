@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1{
+    font-weight: 700;
+    font-size: 31px;
+}
+
+p{
+    font-weight: 400;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul ol{
+    list-style: none;
+}
+
+aside, nav, footer, header, section, main {
+	display: block;
+}
+
+img, svg {
+	max-width: 100%;
+	height: auto;
+}
+
+input, textarea, button, select {
+	font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    border: none;
+}
+
+:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+/* Часто используемые блоки */
+.title {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.btn {
+    padding: 15px;
+    background: black;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 24px;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* --------------------- */
+
+
+/* своя суета */
+.footer__year, .footer__authors{
+    font-family: "Anton", sans-serif;
+    font-size: 40px;
+    color: #777;
+}
+
+::selection{
+    background-color: #ff7878;
+}
+/* --- Файл обнуления + шрифты--- */

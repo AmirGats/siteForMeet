@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="assets/images/ico/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <title>Sweet Pear</title>
+  </head>
+  <body>
+    <!-- Модальное окно для входа-->
+    <div class="modal">
+        <div class="fon" onclick="closeModal()"></div>
+        <form action="#" method="#" class="form__add">
+            <div class="modal__title">
+                <div class="modal__word">Вход</div>
+                <div class="modal__img"><img src="assets/images/logo/logo-light.svg" alt="logo"></div>
+            </div>
+            <input name="name" type="text" placeholder="yourmail@mail.ru">
+            <input name="tel" type="tel" placeholder="password">
+            <button class="modal__btn">Add</button>
+        </form>
+    </div>
+
+    <!-- Модальное окно для регистрации-->
+    <div class="modal__reg">
+        <div class="fon__reg" onclick="closeModalReg()"></div>
+        <form action="#" method="#" class="form__add__reg">
+            <div class="modal__title">
+                <div class="modal__word">Зарегистрируйтесь</div>
+                <div class="modal__img"><img src="assets/images/logo/logo-light.svg" alt="logo"></div>
+            </div>
+            <input name="name" type="text" placeholder="Имя">
+            <input name="email" type="email" placeholder="yourmail@mail.ru">
+            <input name="password" type="password" placeholder="password">
+            <button class="modal__btn">Add</button>
+        </form>
+    </div>
+
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <nav class="header__nav">
+          <div class="header__logo">
+            <a href="#"><img src="assets/images/logo/logo.svg" alt="Logo" /></a>
+            <span class="header__logo-text">SweetPear</span>
+          </div>
+          <button class="btn" onclick="openModal()">Войти</button>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Содержимое сайта -->
+    <main>
+      <!--Главная секция  -->
+      <section class="main">
+        <div class="container">
+          <div class="main__inner">
+            <div class="main__description">
+              <h1 class="main__title">
+                Добро пожаловать на SweetPear — сайт знакомств, где каждый может
+                найти свою вторую половинку!
+              </h1>
+              <p class="main__info">
+                Мы создали SweetPear для того, чтобы помочь людям со схожими
+                интересами и ценностями найти друг друга. Наша платформа
+                предоставляет возможность познакомиться с новыми людьми, узнать
+                их получше и, возможно, построить серьёзные отношения.
+              </p>
+              <button class="main__btn btn" onclick="openModalReg()">Найти половинку</button>
+            </div>
+            <div class="main__illustration">
+              <img src="assets/images/img/love-image.jpeg" alt="Image-love" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Секция инструкий -->
+      <section class="instruction">
+        <div class="container">
+          <div class="instruction__inner">
+            <div class="title">Как пользоваться:</div>
+            <div class="instruction__view">
+              <div class="instruction__step">
+                <div class="instruction__step__img">
+                  <img
+                    src="assets/images/ico/register.svg"
+                    alt="registration"
+                  />
+                </div>
+                <div class="instruction__step__text">Зарегистрируйтесь</div>
+              </div>
+              <div class="instruction__step">
+                <div class="instruction__step__img">
+                  <img src="assets/images/ico/profile.svg" alt="profile" />
+                </div>
+                <div class="instruction__step__text">Настройте профиль</div>
+              </div>
+              <div class="instruction__step">
+                <div class="instruction__step__img">
+                  <img src="assets/images/ico/search.svg" alt="search" />
+                </div>
+                <div class="instruction__step__text">Ищите пару !</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Секция О нас -->
+      <section class="aboutUs">
+        <div class="container">
+          <div class="aboutUs__inner">
+            <div class="title">О нас</div>
+            <div class="aboutUs__description">
+              <p class="aboutUs__description__item">
+                Sweat Pear — это не просто приложение для знакомств, это целая
+                вселенная, где каждый может найти себе пару по душе. Здесь вы
+                сможете встретить единомышленников, друзей и даже настоящую
+                любовь.
+              </p>
+              <p class="aboutUs__description__item">
+                Неважно, кто вы и какие у вас интересы, в Sweat Pear вы
+                обязательно найдёте тех, с кем вам будет хорошо. Это место, где
+                вы можете быть собой и не бояться осуждения. Здесь ценят
+                искренность, открытость и уважение к другим.
+              </p>
+              <p class="aboutUs__description__item">
+                Не упустите свой шанс на счастье! Скачайте Sweat Pear прямо
+                сейчас и начните своё путешествие в мир новых знакомств и ярких
+                эмоций.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer"></footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
